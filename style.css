@@ -99,3 +99,40 @@ a:hover {
   overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
+
+.menuLinks a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menuLinks li {
+  list-style: none;
+}
+
+.menuLinks.open {
+  max-height: 300px;
+}
+
+.hamburgerIcon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburgerIcon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburgerIcon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburgerIcon span:first-child {
+  transform: none;
+}
+.hamburgerIcon span:first-child {
+  opacity: 1;
+}
+.hamburgerIcon span:first-child {
+  transform: none;
+}
