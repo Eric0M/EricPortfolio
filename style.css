@@ -1,6 +1,5 @@
 /* General */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +24,7 @@ a,
 }
 
 /* Desktop Nav */
+
 nav,
 .navLinks {
   display: flex;
@@ -35,6 +35,7 @@ nav {
   align-items: center;
   height: 17vh;
 }
+
 
 .navLinks {
   gap: 2rem;
@@ -61,6 +62,145 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
+
+.desktopLogo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Dark Mode Button */
+body {
+    transition: background-color 0.5s;
+}
+.toggleBTN{
+  border: none;
+  transition: all 300ms ease;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  padding: 0.25rem;
+  background-color: #fff;
+}
+
+.toggleBTN:hover{
+  background-color: #121212;
+  color: #dcd55c;
+}
+
+/* Add a class for dark mode */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #2a75bb; /* Nice blue color for text in dark mode */
+}
+.dark-mode #darkModeToggle{
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+}
+.dark-mode #darkModeToggle:hover{
+  background-color: #fff;
+  color: #e2b50f;
+}
+
+.dark-mode a {
+    color: #2a75bb; /* Adjust link color in dark mode */
+}
+
+/* Apply dark mode styles to text-container */
+.dark-mode .text-container {
+    color: #2a75bb; /* Nice blue color for text in dark mode */
+}
+
+.dark-mode #about .text-container p {
+    color: #fff; /* White text color in dark mode */
+}
+
+.dark-mode .about-details-container .details-container p{
+  color: #2a75bb;
+}
+
+.dark-mode  .details-container .article-container p{
+  color: #2a75bb;
+}
+
+.dark-mode .details-container {
+    background-color: #121212; /* Dark background color for details-container */
+    color: #fff; /* Light text color for details-container */
+
+    /* Border to distinguish details-container elements */
+    border: #fff 0.1rem solid;
+}
+.dark-mode .details-container p{
+    background-color: #121212; /* Dark background color for details-container */
+    color: #333; /* Light text color for details-container */}
+
+.dark-mode article img{
+    filter: invert(1); 
+}
+
+.dark-mode .details-container > img{
+    filter: invert(1); 
+}
+
+.dark-mode .details-container h2 {
+    color: #fff; /* Adjust title color in dark mode */
+}
+
+.dark-mode .details-container .btn-container button {
+    background-color: #121212; /* Dark background for buttons */
+    color: #fff; /* Button text color in dark mode */
+    border: 1px solid #fff; /* Border for buttons */
+}
+
+.dark-mode .arrow {
+    filter: invert(1); 
+}
+
+.dark-mode #socialsContainer img{
+  filter: invert(1);
+}
+
+.dark-mode .contact-info-container a{
+  color: #333;
+}
+.dark-mode .btn {
+    background-color: #121212; /* Dark background for buttons */
+    color: #fff; /* Button text color in dark mode */
+    border: 1px solid #fff; /* Border for buttons */
+}
+.dark-mode .btn:hover{
+  background-color: #2a75bb;
+  color: #fff;
+}
+
+.dark-mode .details-container .btn-container .btn{
+ background-color: #121212; /* Dark background for buttons */
+    color: #fff; /* Button text color in dark mode */
+    border: 1px solid #fff; /* Border for buttons */
+}
+.dark-mode .details-container .btn-container .btn:hover{
+background-color: #2a75bb;
+  color: #fff;
+}
+
+.dark-mode .section__text__p1{
+  color: #ffffff;
+}
+.dark-mode .section__text__p2{
+  color: #ffffff;
+}
+
+.dark-mode #profile p {
+  color: black;
+
+}
+
+
+
+.dark-mode #profile #socialsContainer {
+  filter: invert(1);}
 
 /* Hamburger Menu */
 
@@ -158,6 +298,11 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  background-image: url(/assets/temp.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  box-shadow: 0 0 100px black inset;
+  margin: 0;
 }
 
 .section__picContainer {
@@ -187,6 +332,10 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+}
+
+#profile .section__text{
+  opacity: 70%;
 }
 
 #socialsContainer {
